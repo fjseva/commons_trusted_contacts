@@ -913,7 +913,7 @@ function commons_trusted_contacts_messages_popup($form, &$form_state, $account) 
   // Include original functions.
   module_load_include('inc', 'privatemsg', 'privatemsg.pages');
 
-  $form = privatemsg_new($form, $form_state, $account->uid, 'New private message from ' . $user->name);
+  $form = privatemsg_new($form, $form_state, $account->uid, t('New private message from ') . $user->name);
 
   $form['actions'] = array('#type' => 'actions');
 
